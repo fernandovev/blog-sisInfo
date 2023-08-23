@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 15vw; /* Adjust this value according to the width of the TOC */
+    overflow-y: auto;
+}
+
+aside {
+    width: 10vw; /* Width of the TOC */
+    background-color: #26ab33;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
