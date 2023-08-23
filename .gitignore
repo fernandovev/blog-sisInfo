@@ -1,0 +1,28 @@
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore build artifacts and temporary files
+node_modules/
+build/
+dist/
+*.log
+*.tmp
+
+# Ignore sensitive or private information
+config.ini
+secrets.json
+
+# Ignore user-specific settings
+.vscode/
+.idea/
+
+# Ignore compiled CSS or JavaScript (if applicable)
+*.css
+*.js
+
+# Ignore backup files
+*~
+
+# Ignore cache folders
+.cache/
