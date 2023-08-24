@@ -150,5 +150,7 @@ video {
 
 p {
     color: black; /* Change text color to black */
-    line-height: 1.6;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 10px;
 }
