@@ -1,34 +1,53 @@
-body, html {
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100%;
 }
 
 .wrapper {
     display: flex;
     min-height: 100vh;
+    overflow: hidden; /* Prevent horizontal scrolling on the wrapper */
 }
 
+
 header {
-    background-color: #f0f0f0;
+    background-color: #0978db; 
+    margin-left: 5vw;
     padding: 20px;
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 2; /* Place above the main content */
     text-align: center;
+    font-size: 15px;
+    color: white;
 }
 
 main {
     flex-grow: 1;
     padding: 20px;
-    margin-left: 15vw; /* Adjust this value according to the width of the TOC */
-    overflow-y: auto;
+    margin-top: 10vh;
+    margin-left: 20vw;
+    margin-right: 10vw;
+    overflow-y: auto; /* Allow vertical scrolling within the main content */
+    background-color: #f9f9f9; /* Light gray background */
+    transition: margin-left 0.3s ease; /* Add smooth transition to main content shift */
 }
 
+nav.toc ul li {
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
 aside {
-    width: 10vw; /* Width of the TOC */
-    background-color: #26ab33;
+    width: 15vw;
+    background-color: #010a12;
     padding: 20px;
     position: fixed;
     top: 0;
@@ -36,13 +55,100 @@ aside {
     bottom: 0;
     overflow-y: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 3; /* Behind the main content */
+    color: white;
 }
+
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #f0f0f0;
+    background-color: #34495e;
     width: 100%;
     position: fixed;
     bottom: 0;
+    color: white;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ... Other styles as before ... */
+
+/* Style links */
+a {
+    color: #3498db; /* Blue link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9; /* Darker blue on hover */
+}
+
+/* Style headings */
+h2 {
+    font-size: 30px;
+    color: #333; /* Dark text color */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h4 {
+    color: #adbac7; /* Dark text color */
+    margin-bottom: 30px;
+}
+
+/* Style paragraphs */
+p {
+    color: #555; /* Medium text color */
+    line-height: 1.6;
+}
+
+/* Style images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style blockquote */
+blockquote {
+    background-color: #ecf0f1; /* Light gray background */
+    border-left: 4px solid #3498db; /* Blue border */
+    padding: 10px;
+    margin: 15px;
+}
+
+/* Style code block */
+pre {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+/* Style table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style videos */
+video {
+    width: 100%;
+    max-height: 400px;
+    margin: 15px 0;
+}
+
+p {
+    color: black; /* Change text color to black */
+    line-height: 1.6;
 }
