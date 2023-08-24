@@ -2,24 +2,29 @@
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
+    width: 100%;
+    background-color: #084211;
+    background: linear-gradient(to right, hsla(150, 73%, 19%, 0.425),#183f2b), url(Img_Fernando/Menu_animated.gif);
+    background-size: cover;
 }
 
 /* Set a background color for the header */
 header {
-    background-color: #333;
-    color: #fff;
+
+    color: #D9DFDC;
     padding: 10px 0;
     text-align: center;
+    
 }
 
 /* Style the header text */
 h1 {
-    font-size: 24px;
+    font-size: 100px;
 }
 
 /* Style the navigation menu */
 nav {
-    background-color: #eee;
+    background-color: transparent;
     text-align: center;
     padding: 10px 0;
 }
@@ -27,11 +32,12 @@ nav {
 /* Style the navigation links */
 nav a {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 50px;
     text-decoration: none;
-    color: #333;
+    color: #82B7D2;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
+    font-size: 87px;
 }
 
 /* Change link color on hover */
@@ -53,3 +59,5 @@ nav a:hover {
 p {
     margin-bottom: 15px;
 }
+
+
